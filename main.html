@@ -1,0 +1,53 @@
+<head>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+</head> 
+
+<div>
+    <image src="logo.png" id="logo"> </image>
+    
+    <h1>John Doe</h1>
+    
+    <button id = "logoff" onclick="window.location.href = 'index.html' "> Logoff </button>
+</div>
+
+<hr>
+<div id=continer>
+    <div id=class_container> 
+        <span onclick="window.location.href = 'class.html' ">My Courses</span>
+        <script>
+            anychart.onDocumentReady(function() {
+
+        // set the data
+        var data = {
+            header: ["Name", "Days Present"],
+          rows: [
+            ["P1", 15],
+            ["P2", 14],
+            ["P3", 15],
+            ["P4", 13],
+            ["P5", 15],
+            ["P6", 15]
+        ]};
+                
+
+        // create the chart
+       var chart = anychart.bar();
+
+        // add data
+        chart.data(data);
+
+
+
+      // draw
+      chart.container("class_container");
+      chart.draw();
+    });
+        </script>
+    </div>
+
+    <div id="piechart_container">
+        <div>Attendance Summary</div>
+        <image src="Pie_Chart_Example.png" id = "piechart"> </image>
+    </div>
+</div>

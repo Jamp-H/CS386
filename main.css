@@ -1,0 +1,52 @@
+#piechart {
+    height: 40%;
+    width: 70%;
+}
+
+#container{
+    margin: auto;
+}
+
+#piechart_container{
+    font-size: 28pt;
+    float: right;
+    width: 50%;
+}
+
+hr{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    border-color: black;
+}
+
+#logo{
+    height: 20%;
+    width: 20%;
+    text-align: left;
+    display: inline;
+}
+
+#logoff{
+    height: 5%;
+    width: 10%;
+    font: 24pt;
+}
+
+h1{
+    text-align: right;
+    display: inline;
+    padding-left: 55%
+}
+
+#class_container{
+    font-size: 28;
+    width: 50%;
+    float: left;
+    height: 70%;
+}
+
+p{
+    display: inline;
+    padding-top: 10%;
+}
